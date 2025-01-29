@@ -1,0 +1,53 @@
+1-What is Programming and Program Development Life Cycle ?
+Programming is a Process of Problem Solving
+
+Step 1: Analyze The Problem 
+- Understand the Overall Problem
+
+-Define Problem Requirements
+ . Does Program require user interaction ? 
+   - if yes, What is the input ?
+ . What is the Expected output ? 
+
+- Design steps(algorithm) to solve the problem.
+
+Algorithm:
+-----------
+	Step-by-Step Problem-Solving process.
+
+The Programmer Should Focus on Three Parts:-
+Input,Processing,Output
+
+Step 2: Implement the Algorithm
+- Implement the algorithm in code.
+- Verify that the algorithm works.
+
+Step 3: Maintenance
+- Use and Modify the program if the problem domain Changes.
+
+if the problem is complex, divide it into sub-problems.
+	Analyze each sub-problem as above 
+
+
+
+Example
+Write a program to find the area of a rectangle.
+The area of the Rectangle are Given by the following formula:-
+	Area = Rect Length * Rect Width
+
+Input :
+------- 
+			Rectangle Length, Rectangle Width.
+Processing :
+------------
+			Area = Rect Length * Rect Width.
+Output :
+--------
+			Print Out The Area. 
+
+
+
+
+
+To Sum it up......
+			Think Then Write Code. 

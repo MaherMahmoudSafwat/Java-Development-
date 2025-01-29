@@ -1,0 +1,47 @@
+Objects in Super market Program
+Super Market Environment 
+-Product	-Customer 	-Cashier 
+-Cart 		-Bager
+
+Objects in Bike Store Program
+Bike Store Environment
+-Bike	-Customer	-Spare Part
+-Accessories	-.........	-.........
+
+Object is comprised of ? 
+Object ----> Data
+   |
+   |
+   |-------->Operations () 
+
+Product
+-------
+Data :-
+1-Product_name , 
+2-Product_code
+3-Price
+4-Producer
+5-Discount
+Operations () :- 
+1-Modify Price ()
+2-Set Discount ()
+3-Get Product Name () 
+4-Get Product Price ()
+
+Student
+--------
+Data :- 
+1-Student_name , 
+2-University_id
+3-Birth_Date
+4_Address
+5-GPA
+6-Study_Level
+Operations () :- 
+1-Modify GPA()
+2-Change Study Level () 
+3-Get Student Name () 
+4-Get Student Address () 
+
+Object has Data item (Attributes) , (Properties) and Operations (Methods), (Functions) , (Procedures).
+Objects talk to each other in terms of sending a messages.       

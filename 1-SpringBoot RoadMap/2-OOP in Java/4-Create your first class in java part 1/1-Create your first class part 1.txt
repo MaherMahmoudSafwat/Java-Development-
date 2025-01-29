@@ -1,0 +1,51 @@
+Objects and Classes
+Classes: Where Objects Come From
+-A class is code that describes a particular type of object. It specifies the data that object can hold (the object's fields), and the actions that an object can perform (the object's methods).
+
+-you can think of a class as a code "blueprint" that can be used to create a particular type of object.
+
+-When a program is running, it can use the class to create, in memory, as many objects of a specific type as needed.
+
+-Each object that is created from a class is called an instance of the class. 
+
+Example: 
+
+                  This expression creates
+		  a Scanner object in memory
+                             |
+                  -----------------------
+                  |			|
+Scanner input = new Scanner (System.in);
+	 |        |
+	 |        |
+         |--------|
+	      |
+          The object's
+	memory address is
+	assigned to the input
+	variable.
+
+Input				Scanner
+Variable ----------------------> Object
+
+
+                  This expression 
+                  creates a Random 
+                  object in memory
+                        |
+                  -----------
+                  |	    |		|
+Random rand = new Random ();
+	 |        |
+	 |        |
+         |--------|
+	      |
+          The object's
+	memory address is
+	assigned to the rand
+	variable.
+
+rand				Random
+Variable ----------------------> Object
+Address is stored in rand variable
+note :- Address is stored in rand variable that is declared by an object. 

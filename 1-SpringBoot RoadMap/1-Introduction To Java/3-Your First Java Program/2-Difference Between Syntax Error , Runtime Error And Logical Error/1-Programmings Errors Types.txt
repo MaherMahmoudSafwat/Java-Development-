@@ -1,0 +1,44 @@
+Here’s a summary of the differences between syntax error, runtime error, and logical error in programming:
+
+1. Syntax Error
+What is it?
+An error in the structure of the code that violates the rules of the programming language.
+When does it occur?
+Detected during the compilation phase (before the program runs).
+Example:
+java
+Copy code
+System.out.println("Hello World) // Missing closing quotation mark
+Result:
+The program won’t compile or run until the error is fixed.
+2. Runtime Error
+What is it?
+An error that occurs while the program is running, usually due to invalid operations or unexpected conditions.
+When does it occur?
+Detected while the program is executing.
+Example:
+java
+Copy code
+int result = 10 / 0; // Division by zero causes a runtime error
+Result:
+The program crashes or behaves unexpectedly.
+3. Logical Error
+What is it?
+A mistake in the program’s logic that produces incorrect results, even though the program runs without crashing.
+When does it occur?
+Detected only by testing the program’s output.
+Example:
+java
+Copy code
+int sum = a - b; // Intended to add 'a' and 'b', but used subtraction
+Result:
+The program runs but produces incorrect results.
+Key Differences
+Type of Error	Detected When?	Effect	Example Cause
+Syntax Error	During Compilation	Prevents program from compiling	Missing semicolon
+Runtime Error	During Program Execution	Program crashes or stops abruptly	Division by zero
+Logical Error	After Execution (Testing)	Incorrect program output	Wrong formula or logic
+Summary
+Syntax Errors: Problems with code structure (compiler catches them).
+Runtime Errors: Issues during execution (program crashes).
+Logical Errors: Flaws in logic (program runs but gives wrong results).

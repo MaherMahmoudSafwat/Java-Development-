@@ -1,0 +1,188 @@
+What is Object Oriented Programming ?
+1-OOP is a programming paradigm based on the concepts of objects.
+2-A programming paradigm :- is a style of programming, a way of thinking about software construction.
+3-A Programming Paradigm does not refer to a specific language but rather to a way to build a program or methodology to apply.
+4-Some languages make it easy to write in some paradigms but not others.
+5-Some Programming Languages allow the programmer to apply more than one paradigm.
+-A programming paradigm is a style or way of programming that provides a framework for solving problems and organizing code. It defines how developers structure and write their programs. There are several types, each with its approach to handling tasks:
+Imperative Programming: Focuses on giving the computer specific instructions to perform tasks (e.g., step-by-step commands).
+
+Object-Oriented Programming (OOP): Organizes code into objects that represent real-world entities, with data and functions bundled together (e.g., classes, objects).
+
+Functional Programming: Treats computation as the evaluation of mathematical functions and avoids changing state or mutable data (e.g., pure functions).
+
+Declarative Programming: Focuses on what to solve rather than how to solve it, describing the desired result without explicitly listing steps (e.g., SQL).
+
+Each paradigm has its strengths and is suited for different types of problems.
+
+-Programming Paradigms.
+-The Programming Paradigm refers to a way of conceptualizing and structuring the tasks a computer performs.
+-------------------------------------------------------------------------------------------
+|Paradigm 	|Languages		|Description                         		  |
+------------------------------------------------------------------------------------------- 
+|Procedural	|BASIC, Pascal, FORTRAN,|Emphasizes linear steps that provide the computer|
+|		|Ada			|with instructions on how to solve a problem or   |
+|		|			|carry out a task.				  |
+-------------------------------------------------------------------------------------------
+|Object-Oriented|Smalltalk, C++, Java	|Formulates programs as a series of objects 	  |
+|		|			|and methods that interact to perform a task.	  |
+-------------------------------------------------------------------------------------------    			 
+|Declarative	|			|Focuses on the use of facts and rules to describe|
+|	        |			|a problem.					  |
+------------------------------------------------------------------------------------------- 
+|Prolog		|			|Emphasizes the evaluation of expressions, called | 
+|		|			|functions.				          |
+-------------------------------------------------------------------------------------------
+|Event-Driven   |Visual Basic, C#	|Focusing on selecting user interface elements and|
+|		|			|defining event-handling routines that are	  |
+|		|			|triggered by various mouse or keyboard activities|
+-------------------------------------------------------------------------------------------
+
+Example of previous Programming Paradigm.
+
+Procedural Programming
+
+-Procedural Programming (PP), also known as inline programming takes a top-down approach. it is about writing a list of instructions to tell the computer what to do step by step. it relies on procedures or routines.
++----------------------+
+|    Start Program     |
++----------------------+
+           |
+           v
++----------------------+
+| Initialize Variables |
++----------------------+
+           |
+           v
++-------------------------------+
+|  Function 1: Perform Task A    |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|  Function 2: Perform Task B    |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|  Function 3: Perform Task C    |
++-------------------------------+
+           |
+           v
++----------------------+
+|  Main Control Flow   |
+|  (calls functions)   |
++----------------------+
+           |
+           v
++----------------------+
+|    End Program       |
++----------------------+
+
+
+Sure! Let me create a simple, visual representation of the procedural programming paradigm to help you understand its structure. The focus will be on the sequence of instructions and the concept of breaking down tasks into functions or procedures.
+
+Visualization of Procedural Programming Paradigm:
+sql
+Copy
++----------------------+
+|    Start Program     |
++----------------------+
+           |
+           v
++----------------------+
+| Initialize Variables |
++----------------------+
+           |
+           v
++-------------------------------+
+|  Function 1: Perform Task A    |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|  Function 2: Perform Task B    |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|  Function 3: Perform Task C    |
++-------------------------------+
+           |
+           v
++----------------------+
+|  Main Control Flow   |
+|  (calls functions)   |
++----------------------+
+           |
+           v
++----------------------+
+|    End Program       |
++----------------------+
+Key Concepts:
+Start Program: The program begins here.
+Initialize Variables: All necessary variables or data structures are set up.
+Functions: Each task is encapsulated in a function that can be called from the main control flow.
+Main Control Flow: The program's main flow of execution calls functions in a sequence.
+End Program: The program terminates when all tasks are completed.
+How It Works:
+Procedures (Functions): Reusable blocks of code that perform specific tasks. In procedural programming, the focus is on writing functions to accomplish tasks.
+Control Flow: The program's flow follows a sequence of instructions. It can call different functions, loop through code, and perform operations sequentially.
+
+Procedural Programming Example : Program to Calculate Average of Array Items.
++----------------------+
+|        Start         |
++----------------------+
+           |
+           v
++----------------------------+
+|   Get Input Array from User |
++----------------------------+
+           |
+           v
++---------------------------+
+| Function: Calculate Average|
+|   (calls Calculate Sum)    |
++---------------------------+
+           |
+           v
++---------------------------+
+| Subroutine: Calculate Sum  |
++---------------------------+
+           |
+           v
++---------------------------+
+| Function: Calculate Count  |
++---------------------------+
+           |
+           v
++----------------------+
+|        End           |
++----------------------+
+
+-Object-Oriented Programming(OOP) is a programming paradigm based on the concept of objects.
+Object : is a thing (Tangible - Intangible). 
+
+Examples of Objects :-
+Objects in Student housing management Program.
+Student Housing Environment.
+-Student -Room -Building 
+-Furniture 
+
+Objects in College Management Program.
+College Environment. 
+-Student -Course -Teacher
+-Class -Grading Report
+
+Examples of an Objects :- Car
+
+Properties: color, model, speed
+Methods: startEngine(), accelerate(), stopEngine()
+Person
+
+Properties: name, age, gender
+Methods: speak(), walk(), sleep()
+Book
+
+Properties: title, author, pages
+Methods: openBook(), readPage(), closeBook()
+

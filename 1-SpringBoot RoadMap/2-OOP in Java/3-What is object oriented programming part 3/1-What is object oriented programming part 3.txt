@@ -1,0 +1,75 @@
+Is comprised Of ? 
+Car
+----
+Data (Attributes) , (Proprieties) :- 
+1- Factory,
+2 -Model
+3- Fuel_Capacity
+4- No_of_doors
+5- Color
+6- Shape
+
+Operations () , (Methods ()) :- 
+1-Set Factory Name()
+2-Change Color () 
+3-Get Car info () 
+4-.................. 
+
+What is Class ? and why do we need it ? 
+What is a Class?
+A class is like a template or blueprint. It defines the common features and behaviors for objects created from it.
+
+Why Do We Need a Class?
+Organization: Helps group related things together.
+Reusability: Once the class is defined, you can create multiple objects from it.
+Encapsulation: Protects and organizes data related to the object.
+Example: Car Class
+Imagine a class called Car. This class has:
+
+Attributes (properties): like color, model, and speed.
+Behaviors (methods): like starting the engine or driving.
+Visualization of Car Class:
+sql
+Copy
++-------------------+
+|       Car         |
++-------------------+
+| - color: String   |
+| - model: String   |
+| - speed: int      |
++-------------------+
+| + startEngine()   |
+| + drive()         |
++-------------------+
+Here, the Car class defines that every car object will have a color, model, and speed, and can perform startEngine() and drive().
+
+Creating 3 Objects from the Car Class:
+Now, we create 3 objects (cars) from this class:
+
+yaml
+Copy
++---------------------+     +---------------------+     +---------------------+
+|       Car 1         |     |       Car 2         |     |       Car 3         |
++---------------------+     +---------------------+     +---------------------+
+| color: Red          |     | color: Blue         |     | color: Black        |
+| model: Tesla        |     | model: BMW          |     | model: Audi         |
+| speed: 120          |     | speed: 100          |     | speed: 150          |
++---------------------+     +---------------------+     +---------------------+
+| startEngine()       |     | startEngine()       |     | startEngine()       |
+| drive()             |     | drive()             |     | drive()             |
++---------------------+     +---------------------+     +---------------------+
+Car 1: A Red Tesla with speed 120.
+Car 2: A Blue BMW with speed 100.
+Car 3: A Black Audi with speed 150.
+Each of these cars is an object created from the Car class.
+
+Summary:
+A class is a blueprint or template (like a cookie cutter).
+An object is a specific instance (like a cookie made from the cutter).
+You can create multiple objects (cars) from a single class (Car).
+This organization makes it easier to work with multiple objects that share the same structure but have different values.
+
+
+
+
+ 

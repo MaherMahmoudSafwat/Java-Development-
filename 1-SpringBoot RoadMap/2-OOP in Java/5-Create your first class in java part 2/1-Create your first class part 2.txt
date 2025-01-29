@@ -1,0 +1,54 @@
+1. Class Diagram for Rectangle
+In object-oriented programming, a class is like a blueprint for creating objects. It defines the properties (attributes) and behaviors (methods) that an object can have. Here's a class diagram for a Rectangle class.
+
+arduino
+Copy
+----------------------
+|     Rectangle      |
+----------------------
+| - width: double    |
+| - height: double   |
+----------------------
+| + setWidth(w: double): void  |
+| + setHeight(h: double): void |
+| + getArea(): double          |
+| + getPerimeter(): double     |
+----------------------
+Attributes (fields): width and height represent the dimensions of the rectangle. These are private (indicated by -), meaning they can't be accessed directly outside the class.
+
+Methods:
+
+setWidth(w: double) and setHeight(h: double) are public methods to modify the dimensions of the rectangle.
+getArea() and getPerimeter() are public methods to compute the area and perimeter of the rectangle.
+2. Access Modifiers in Java
+Access modifiers control the visibility and accessibility of classes, methods, and variables. In Java, there are four types of access modifiers:
+
+private:
+
+Members (fields or methods) are only accessible within the class they are defined in.
+Example: private double width;
+Usage: Protects sensitive data, ensures encapsulation.
+default (no modifier):
+
+Members are accessible only within the same package.
+Example: double height;
+Usage: Often used when you want to restrict access to classes or methods within the same package.
+protected:
+
+Members are accessible within the same package and by subclasses.
+Example: protected void setWidth(double w) { this.width = w; }
+Usage: Useful when you want subclasses to have access to inherited members.
+public:
+
+Members are accessible from any other class.
+Example: public double getArea() { return width * height; }
+Usage: Makes methods or fields available universally.
+Why Use Access Modifiers?
+Encapsulation: Access modifiers help in hiding the internal workings of the class, allowing you to expose only what is necessary. This reduces the risk of unintended modifications and helps in data protection.
+
+Security: You can restrict access to sensitive information using private or protected fields and methods, ensuring they are modified only through controlled methods.
+
+Flexibility: By controlling access, you can provide different levels of interaction with your class depending on the situation or user needs.
+
+In the example of the Rectangle class, the width and height are marked as private because you don’t want any outside code to change them directly. Instead, you expose public setter methods to safely alter the state of the rectangle and getter methods to access its area or perimeter.
+

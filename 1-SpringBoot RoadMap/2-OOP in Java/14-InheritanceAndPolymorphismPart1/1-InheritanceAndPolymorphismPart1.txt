@@ -1,0 +1,81 @@
+
+Inheritance in Java
+Inheritance is one of the core concepts of object-oriented programming (OOP). It allows one class (called the subclass or child class) to inherit the properties and behaviors (fields and methods) of another class (called the superclass or parent class). This concept promotes reusability and modularity in code. The subclass can also add its own fields and methods or override inherited methods to provide its own specific implementation.
+
+Superclass (Parent Class): The class that is inherited from.
+Subclass (Child Class): The class that inherits from the superclass.
+For example, if you have a Shape class, you can create subclasses like Rectangle or Circle, which will inherit properties like area or perimeter from Shape. These subclasses can then add their own methods specific to them, such as calculateArea().
+
+Key terms related to Inheritance:
+extends: In Java, a class inherits from another class using the keyword extends.
+java
+Copy
+class Rectangle extends Shape { }
+super: The super keyword refers to the superclass of the current object. It can be used to call a superclass constructor or method.
+Polymorphism in Java
+Polymorphism means the ability to take on many forms. In Java, polymorphism allows an object of a subclass to be treated as an object of the superclass. The most common use of polymorphism is method overriding, where a subclass provides a specific implementation of a method already defined in its superclass.
+
+There are two types of polymorphism:
+
+Compile-time polymorphism (Method Overloading)
+Happens when methods with the same name but different parameters exist within the same class or subclass.
+Runtime polymorphism (Method Overriding)
+Happens when a method in a subclass overrides a method in a superclass, and the JVM determines at runtime which method to call, based on the object type.
+For example, if you have a reference of the type Shape but it points to an object of type Rectangle, calling the calculateArea() method will invoke the Rectangle version of the method, not the Shape version.
+
+"IS-A" and "HAS-A" Relationships
+In OOP, you also encounter the terms "IS-A" and "HAS-A" relationships to describe the relationship between classes.
+
+IS-A: The "IS-A" relationship represents inheritance. If class B inherits from class A, then we say that B IS A type of A. For example, a Square IS A Shape because Square inherits from Shape.
+
+Example: Rectangle IS A Shape
+HAS-A: The "HAS-A" relationship is used when one class contains an instance of another class as a field (also known as composition). This relationship indicates that a class has a reference to another class but does not necessarily inherit from it.
+
+Example: A Car HAS A Engine, where Car contains an instance of Engine but Car does not inherit from Engine.
+Class Diagrams to Explain Inheritance, Polymorphism, and Relationships
+Here's a class diagram that visually explains Inheritance, Polymorphism, and the IS-A and HAS-A relationships:
+
+1. Inheritance (IS-A Relationship)
+plaintext
+Copy
+         Shape
+        _______
+       |       |
+       | area  |  (inherited by subclasses)
+       |_______|
+         ^
+         |
+  ----------------
+  |              |
+Rectangle      Square
+In this diagram, Rectangle and Square inherit from Shape, and both have an IS-A relationship with Shape. This means Rectangle IS A Shape and Square IS A Shape.
+2. Polymorphism (Method Overriding and IS-A)
+plaintext
+Copy
+         Shape
+        _______
+       |       |      Calls overridden method
+       | area  |<-----------------|
+       |_______|                  |
+         ^                        |
+         |                        v
+  ----------------      Rectangle
+  |              |       ____________
+Rectangle      Square   |  calculate |
+                        |    Area    |
+                        |____________|
+This diagram shows runtime polymorphism. A Shape reference can point to a Rectangle object, and calling a method on that reference (like calculateArea()) will invoke the Rectangle version of the method, not the Shape version.
+3. HAS-A Relationship
+plaintext
+Copy
+           Car
+        __________
+       |   Engine |  (Car HAS A Engine)
+       |__________|
+The HAS-A relationship is represented by composition. A Car class might have an Engine class as a member, meaning the car "has" an engine, but the car is not a type of engine (i.e., there is no inheritance here).
+Key Takeaways:
+Inheritance allows subclasses to inherit properties and behaviors from a parent class.
+Polymorphism allows the same method to behave differently based on the object calling it, typically achieved through method overriding.
+IS-A denotes an inheritance relationship, where a subclass is a type of the superclass.
+HAS-A denotes a composition relationship, where one class contains an instance of another class as a member.
+These concepts are fundamental to creating clean, reusable, and maintainable object-oriented code.
