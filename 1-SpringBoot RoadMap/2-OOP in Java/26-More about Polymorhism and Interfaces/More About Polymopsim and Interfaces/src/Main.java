@@ -7,5 +7,6 @@ public class Main {
         A1.Display2();
         Triangle A = new Triangle();
         A.Display();
+        Triangle C3 = new Triangle();
     }
 }
