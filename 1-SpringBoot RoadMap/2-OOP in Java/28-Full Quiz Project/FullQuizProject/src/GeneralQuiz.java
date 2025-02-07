@@ -49,7 +49,6 @@ public class GeneralQuiz implements Utility
             "What is the name of the largest rainforest in the world? Amazon Rainforest",
             "What is the name of the currency used in the European Union? Euro",
             "What is the name of the traditional Japanese art of paper folding? Origami",
-            "What is the name of the Greek god of the sea? Poseidon",
             "What is the name of the Indian spiritual teacher who popularized yoga in the West? Swami Vivekananda",
             "What is the name of the Spanish painter who painted \"Guernica\"? Pablo Picasso",
             "What is the name of the American inventor who invented the light bulb? Thomas Edison",
@@ -101,7 +100,6 @@ public class GeneralQuiz implements Utility
             {"Congo Rainforest", "Daintree Rainforest", "Tongass National Forest", "Valdivian Temperate Rainforest", "Amazon Rainforest", "Southeast Asian Rainforest", "Central American Rainforest", "African Rainforest", "Indian Rainforest", "Borneo Rainforest"}, // Largest rainforest
             {"Dollar", "Pound", "Yen", "Swiss Franc", "Euro", "Canadian Dollar", "Australian Dollar", "Indian Rupee", "Chinese Yuan", "South Korean Won"}, // EU currency
             {"Ikebana", "Bonsai", "Calligraphy", "Sumie", "Origami", "Kendo", "Judo", "Karate", "Aikido", "Taekwondo"}, // Paper folding art
-            {"Zeus", "Hades", "Ares", "Apollo", "Poseidon", "Hermes", "Dionysus", "Hephaestus", "Athena", "Cronus"}, // Greek sea god
             {"Rabindranath Tagore", "Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Vallabhbhai Patel", "Swami Vivekananda", "Indira Gandhi", "Rajendra Prasad", "Morarji Desai", "Lal Bahadur Shastri", "Vinoba Bhave"}, // Yoga popularizer
             {"Salvador Dalí", "Joan Miró", "Francisco Goya", "El Greco", "Pablo Picasso", "Diego Rivera", "Frida Kahlo", "Fernando Botero", "Vincent van Gogh", "Paul Cézanne"}, // "Guernica" painter
             {"Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi", "Wright Brothers", "Thomas Edison", "Samuel Morse", "Eli Whitney", "George Washington Carver", "Henry Ford", "Lewis Latimer"}, // Light bulb inventor
@@ -229,7 +227,7 @@ public class GeneralQuiz implements Utility
         int GetRandomQuestion = 0;
         do
         {
-            GetRandomQuestion = (int) (Math.random() * 50);
+            GetRandomQuestion = (int) (Math.random() * 49);
             FullQuestion = ArrayOfQuestions[GetRandomQuestion];
         }while(IsQuestionHasBeenAskedBefore.contains(FullQuestion));
         IsQuestionHasBeenAskedBefore.add(FullQuestion);
